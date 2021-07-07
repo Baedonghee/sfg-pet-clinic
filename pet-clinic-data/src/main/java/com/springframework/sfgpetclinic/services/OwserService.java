@@ -7,14 +7,8 @@ import java.util.Set;
 /**
  * Created by donghee on 2021/07/07
  */
-public interface OwserService {
+public interface OwserService extends CrudService<Owner, Long>{
 
     Owner findByLastName(String lastName);
-
-    Owner findById(Long id);
-
-    Owner save(Owner owner);
-
-    Set<Owner> findAll();
 
 }
